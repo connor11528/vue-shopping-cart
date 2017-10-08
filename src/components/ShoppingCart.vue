@@ -1,7 +1,21 @@
 <template>
-	<ul>
-		<li v-for='item in cart'>{{ item.name }}</li>
-	</ul>
+	<el-table
+    :data="cart"
+    stripe
+    style="width: 100%">
+    	<el-table-column
+			prop="details.name"
+			label="Item Name"></el-table-column>
+		<el-table-column
+			label="Price">
+			<template scope='scope'>
+			{{ scope.row.details.price | currency }}
+			</template>
+		</el-table-column>
+		<el-table-column
+			prop="quantity"
+			label="Quantity"></el-table-column>
+	</el-table>
 </template>
 
 <script>

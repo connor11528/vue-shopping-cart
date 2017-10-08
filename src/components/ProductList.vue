@@ -24,7 +24,7 @@ export default {
   },
   methods: {
   	addToCart(product){
-  		EventBus.$data.cart.push(product);
+  		EventBus.addToCart(product)
   	}
   }
 }
