@@ -24,7 +24,15 @@ export const EventBus = new Vue({
 		    }
 		},
 		removeFromCart(sku){
+			const locationInCart = this.cart.findIndex(p => {
+				return p.details.sku === sku
+			})
 
+			if(this.cart[locationInCart].quantity <= 1){
+				this.cart.splice(locationInCart, 1)
+			} else {
+				this.cart[locationInCart].quantity--
+			}
 		}
 	}
 });
