@@ -9,7 +9,7 @@
       <el-col :span="8">
         <h1>Shopping Cart</h1>
         <shopping-cart></shopping-cart>
-        <p>Total Cost: {{ totalCost | currency }} </p>
+        <p><b>Total Cost: {{ totalCost | currency }}</b></p>
       </el-col>
     </el-row>
     
