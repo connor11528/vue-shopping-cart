@@ -8,6 +8,13 @@ export const EventBus = new Vue({
 	    	cart: []
 	    };
 	},
+	computed: {
+		totalCost(){
+			return this.cart.reduce((accum, product) => {
+				return accum + product.details.price * product.quantity
+			}, 0)
+		}
+	},
 	methods: {
 		addToCart(product){
 			const locationInCart = this.cart.findIndex(p => {

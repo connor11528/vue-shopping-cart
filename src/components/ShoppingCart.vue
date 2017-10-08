@@ -18,6 +18,7 @@
 		<el-table-column
     		label="">
     		<template scope="scope">
+    			<el-button type="success" icon="plus" @click='addToCart(scope.row.details)' size="mini"></el-button>
     			<el-button type="danger" icon="minus" @click='removeFromCart(scope.row.details.sku)' size="mini"></el-button>
     		</template>
     	</el-table-column>
@@ -36,7 +37,22 @@ export default {
 	methods: {
 		removeFromCart(sku){
 			EventBus.removeFromCart(sku)
-		}
+		},
+		addToCart(product){
+			EventBus.addToCart(product);
+		},
+		// getSummaries(param){
+		// 	console.log(param)
+		// 	const { columns, data } = param;
+
+		// 	columns.forEach((column, index) => {
+		// 		if (index === 0) {
+		// 			sums[index] = 'Total Cost';
+		// 			return;
+		// 		}
+
+		// 	})
+		// }
 	}
 }
 </script>

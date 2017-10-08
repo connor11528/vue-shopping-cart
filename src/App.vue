@@ -9,6 +9,7 @@
       <el-col :span="8">
         <h1>Shopping Cart</h1>
         <shopping-cart></shopping-cart>
+        <p>Total Cost: {{ totalCost | currency }} </p>
       </el-col>
     </el-row>
     
@@ -16,10 +17,13 @@
 </template>
 
 <script>
+import {EventBus} from './store/EventBus'
+
 export default {
   name: 'app',
-  data () {
-    return {
+  computed: {
+    totalCost(){
+      return EventBus.totalCost
     }
   }
 }

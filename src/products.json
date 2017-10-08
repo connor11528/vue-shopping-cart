@@ -1,5 +1,5 @@
 [
-  { "id": 1, "name": "Tshirt", "price": 3001, "quantity": 2, "sku": 1, "images": ["https://cdn.shopify.com/s/files/1/2415/9707/products/Screen_Shot_2017-10-02_at_10.18.11_AM_grande.png?v=1506964811"] },
-  { "id": 2, "name": "Hat", "price": 1999, "quantity": 10, "sku": 2, "images": ["https://cdn.shopify.com/s/files/1/2415/9707/products/Screen_Shot_2017-10-02_at_10.23.01_AM_grande.png"] },
-  { "id": 3, "name": "Stickers", "price": 399, "quantity": 5, "sku": 3, "images": ["https://cdn.shopify.com/s/files/1/2415/9707/products/logo_grande.png?v=1506964542"] }
+  { "id": 1, "name": "Tshirt", "price": 3050, "quantity": 2, "sku": 1, "images": ["https://cdn.shopify.com/s/files/1/2415/9707/products/Screen_Shot_2017-10-02_at_10.18.11_AM_grande.png?v=1506964811"] },
+  { "id": 2, "name": "Hat", "price": 2000, "quantity": 10, "sku": 2, "images": ["https://cdn.shopify.com/s/files/1/2415/9707/products/Screen_Shot_2017-10-02_at_10.23.01_AM_grande.png"] },
+  { "id": 3, "name": "Stickers", "price": 550, "quantity": 5, "sku": 3, "images": ["https://cdn.shopify.com/s/files/1/2415/9707/products/logo_grande.png?v=1506964542"] }
 ]
