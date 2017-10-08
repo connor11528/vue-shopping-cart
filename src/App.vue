@@ -17,13 +17,13 @@
 </template>
 
 <script>
-import {EventBus} from './store/EventBus'
+import {Store} from './store/Store'
 
 export default {
   name: 'app',
   computed: {
     totalCost(){
-      return EventBus.totalCost
+      return Store.totalCost
     }
   }
 }

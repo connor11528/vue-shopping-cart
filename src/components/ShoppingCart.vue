@@ -26,33 +26,21 @@
 </template>
 
 <script>
-import {EventBus} from '../store/EventBus'
+import {Store} from '../store/Store'
 
 export default {
 	computed: {
 		cart(){
-			return EventBus.$data.cart
+			return Store.$data.cart
 		}
 	},
 	methods: {
 		removeFromCart(sku){
-			EventBus.removeFromCart(sku)
+			Store.removeFromCart(sku)
 		},
 		addToCart(product){
-			EventBus.addToCart(product);
-		},
-		// getSummaries(param){
-		// 	console.log(param)
-		// 	const { columns, data } = param;
-
-		// 	columns.forEach((column, index) => {
-		// 		if (index === 0) {
-		// 			sums[index] = 'Total Cost';
-		// 			return;
-		// 		}
-
-		// 	})
-		// }
+			Store.addToCart(product);
+		}
 	}
 }
 </script>

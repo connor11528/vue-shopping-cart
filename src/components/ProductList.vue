@@ -14,17 +14,17 @@
 </template>
 
 <script>
-import {EventBus} from '../store/EventBus'
+import {Store} from '../store/Store'
 
 export default {
   data() {
     return {
-    	products: EventBus.$data.products
+    	products: Store.$data.products
     };
   },
   methods: {
   	addToCart(product){
-  		EventBus.addToCart(product)
+  		Store.addToCart(product)
   	}
   }
 }
