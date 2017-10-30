@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import {Store} from '../store/Store'
+import {Store} from '../store/store'
 
 export default {
 	computed: {
